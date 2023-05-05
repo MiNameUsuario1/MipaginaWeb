@@ -1,0 +1,400 @@
+*{
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}
+
+header{
+    font-size: 20px;
+    background-image: linear-gradient(-150grad, rgb(4, 255, 171), rgb(38, 15, 124));;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    position: fixed;
+}
+
+.InicioTlaxcala{
+    border:black;
+}
+
+.ImgInicioTlaxcala{
+    background-color: white;
+    margin: 0 180px;
+    padding: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    width: 180px;
+    height: 30px;
+}
+
+.Inicio{
+    list-style: none;
+    text-decoration: none;
+}
+
+.fa-solid.fa-bars.Inicio{
+    display: none;
+}
+
+.MenuBot{
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    cursor:pointer
+}
+
+.fa-solid.fa-bars{
+    padding-right: 5px;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+a.MenuR{
+    color: black;
+    text-decoration: none;
+}
+
+.MenuBot{
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+li{
+    display: flex;
+    padding: 10px 20px;
+}
+
+.MenuHorizontal{
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    
+}
+
+
+.MenuVertical{
+    position:absolute;
+    display: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+.Inicio:hover{
+    display: block;
+}
+
+.MenuHorizontal li:hover .MenuVertical{
+    color: white;
+    display: block;
+    list-style: none;
+    background-image: linear-gradient(-150grad, rgb(0, 255, 200), rgb(38, 15, 124));
+    font-family:'Times New Roman', Times, serif;
+}
+
+.MenuVertical li:hover{
+    background-color: rgb(15, 42, 117);
+}
+
+.MenuBot:hover{
+    padding: 10px;
+    background-color: rgb(15, 42, 117);
+    border-radius: 6%;
+}
+
+.MenuR{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Mapa{
+    padding:  10px;
+}
+
+.Mapa:hover{
+    background-color: rgb(15, 42, 117);
+}
+
+
+.Ayuda a {
+    list-style: none;
+    display: flex;
+}
+
+.Contacto{
+    padding: 10px;
+}
+
+.Contacto:hover{
+    background-color: rgb(15, 42, 117);
+}
+
+.TituloCarnaval{
+    padding: 25%;
+   font-size: 80px;
+   text-align: center;
+   color: rgb(15, 13, 129);
+}
+
+.ImagenCarnaval{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 1000px;
+    background-image: url('https://imagenes.ambasmanos.mx/wp-content/uploads/2023/02/Carnaval_Tlaxcala.webp');
+    background-repeat: no-repeat;
+}
+
+#Titulo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    text-align: center;
+}
+
+div.Information{
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    margin: 10px 155px;
+}
+
+.Informacion{
+    width: 991px;
+    line-height: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.Charros{
+    width: 1000px;
+}
+
+.ImgCarnaval{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 1000px;
+}
+
+.Centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Titulos{
+    text-align: center;
+}
+
+.Camadas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.Imagenes{
+    display: flex;
+    justify-content: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div.Tipos{
+    align-items: center;
+    width: 300px;
+    margin: 20px;
+    justify-content: center;
+    border-radius: 40px;
+}
+
+div.Tipos:hover{
+    box-shadow: 0 0.6rem 0.6rem rgb(110, 105, 105);
+}
+
+#Catrines{
+    width: 300px;
+    height: 200px;
+}
+
+#ImagenCharros{
+    width: 300px;
+    height: 200px;
+}
+
+#Antiguos{
+    width: 300px;
+    height: 200px;
+}
+
+.TitulosImagenes{
+    text-align: center;
+    color: rgb(0, 89, 255);
+}
+
+.Parrafo{
+   position: absolute;
+    width: 300px;
+    display: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Tipos:hover .Parrafo{
+    display: block;
+    background-color: white;
+    box-shadow: 0 0.6rem 0.6rem rgb(110, 105, 105);
+}
+
+
+.Tipos2{
+    margin: 20px;
+    width: 300px;
+    justify-content: center;
+}
+
+.Tipos2:hover{
+    box-shadow: 0 0.6rem 0.6rem rgb(110, 105, 105);
+}
+
+#Parrafo2{
+   position: absolute;
+    display: none;
+    width: 300px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Tipos2:hover #Parrafo2{
+    box-shadow: 0 0.6rem 0.6rem rgb(110, 105, 105);
+    display: block;
+    background-color: white;
+}
+
+
+.Tipos3{
+    margin: 20px;
+    justify-content: center;
+    width: 300px;
+}
+
+.Tipos3:hover{
+    box-shadow: 0 0.6rem 0.6rem rgb(110, 105, 105);
+}
+
+
+#Parrafo3{
+    position: absolute;
+    display: none;
+    width: 300px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Tipos3:hover #Parrafo3{
+    display: block;
+    box-shadow: 0 0.6rem 0.6rem rgb(110, 105, 105);
+    background-color: white;
+}
+
+.Tipos4{
+    margin: 20px;
+    width: 300px;
+    justify-content: center;
+}
+
+.Tipos4:hover{
+    box-shadow: 0 0.6rem 0.6rem rgb(110, 105, 105);
+}
+
+#Parrafo4{
+    position: absolute;
+    display: none;
+    width: 300px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Tipos4:hover #Parrafo4{
+    display: block;
+    box-shadow: 0 0.6rem 0.6rem rgb(110, 105, 105);
+    background-color: white;
+}
+
+#Totolac{
+    width: 300px;
+    height: 200px;
+}
+
+.Tipos5{
+    margin: 20px;
+    justify-content: center;
+    width: 300px;
+}
+
+#Blanco{
+    width: 300px;
+    height: 200px;
+}
+
+
+#Cuchillos{
+    width: 300px;
+    height: 200px;
+}
+
+
+.Tipos5:hover{
+    box-shadow: 0 0.6rem 0.6rem rgb(110, 105, 105);
+}
+
+#Parrafo5{
+    display: none;
+    width: 300px;
+    position: absolute;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.Tipos5:hover #Parrafo5{
+    display: block;
+    box-shadow: 0 0.6rem 0.6rem rgb(110, 105, 105);
+    background-color: white;
+}
+
+.Tipo6{
+    margin: 20px;
+    width: 300px;
+    justify-content: center;
+}
+
+.Tipo6:hover{
+    box-shadow: 0 0.6rem 0.6rem rgb(110, 105, 105);
+}
+
+
+#Parrafo6{
+    position: absolute;
+    width: 300px;
+    display: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Tipo6:hover #Parrafo6{
+    display: block;
+   background-color:  white;
+   box-shadow: 0 0.6rem 0.6rem rgb(110, 105, 105);
+
+}
+
+.Final{
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-color: rgb(21, 118, 209);
+    background-size: auto;
+    box-sizing: border-box;
+    display: block;
+    height: 1200px;
+}
