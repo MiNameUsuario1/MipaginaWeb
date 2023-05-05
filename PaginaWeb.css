@@ -1,0 +1,551 @@
+/*Esto sirve para que no haya un espacio en blanco*/
+*{
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}
+
+/*Esto sirve para que el menú tenga un  tamaño de letra de 20*/
+header{
+    /*Esto sirve para que el menú tenga un  tamaño de letra de 20*/
+    font-size: 20px;
+    /*Esto sirve para que el fondo del menú que tenga varios colores del azul claro al azul fuerte*/
+    background-image: linear-gradient(-150grad, rgb(4, 255, 171), rgb(38, 15, 124));
+    /*Se le da un tipo de letra*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*Se le da un ancho al menú para que utilize el 100%*/
+    width: 100%;
+    /*Esto sirve para que el menú se quede en el mismo lugar*/
+    position: fixed;
+}
+
+/*Imagen o icono del menú*/
+.InicioTlaxcala{
+    border:black;
+}
+
+/*Se le da un fondo de color, un margen un ancho y un alto y un espacio del margen*/
+
+.ImgInicioTlaxcala{
+    background-color: white;
+    margin: 0 180px;
+    padding: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    width: 180px;
+    height: 30px;
+}
+
+
+.Inicio{
+    /*Se le quita el estilo de la lista*/
+    list-style: none;
+    /*Se quita la decoración de la lista*/
+    text-decoration: none;
+}
+
+.fa-solid.fa-bars.Inicio{
+    display: none;
+}
+
+/*Al menu se le da un tipo de letra un color*/
+.MenuBot{
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    /*Cuando el cursor este serca del Menú la flecha va a pasar a una mano*/
+    cursor:pointer
+}
+
+/*Al icono se le da un espacio de la derecha de 5px*/
+.fa-solid.fa-bars{
+    padding-right: 5px;
+}
+
+a{
+    /*Se quita la decoración de los links*/
+    text-decoration: none;
+    /*Se le da un color a la letra*/
+    color:white;
+}
+
+
+a.MenuR{
+    /*A la letra del menú vertical se la un color negro*/
+    color: black;
+    text-decoration: none;
+}
+
+/*Menú de festividades*/
+.MenuBot{
+    /*Todo lo que tenga este menú va a estar en el centro*/
+    align-items: center;
+    justify-content: center;
+    /*Se le da un espacio del lado derecho y izquierdo*/
+    padding: 0 10px;
+}
+
+/*Listas*/
+li{
+    /*El menú va a tener un espacio adaptable*/
+    display: flex;
+    /*Se les da un espacio de arriba, abajo, derecha e izquierda del margen*/
+    padding: 10px 20px;
+}
+
+
+.MenuHorizontal{
+    /*Todo el contenido que tenga el div del menú horizontal estara en el centro*/
+    justify-content: center;
+    /*El espacio del menú es adaptable*/
+    display: flex;
+    /*la lista no va a tener decoración*/
+    list-style: none;
+    
+}
+
+.MenuVertical{
+    /*Su menú va a tener un espacio absoluto*/
+    position:absolute;
+    /*No se va a mostrar este menú en la pantalla*/
+    display: none;
+    /*La lista no va a tener estilo*/
+    list-style: none;
+    /*El texto no va a tener decoración*/
+    text-decoration: none;
+}
+
+/*Cuando el cursor se hacerque al Menu Inicio el Menú se va a mostrar*/
+.Inicio:hover{
+    display: block;
+}
+
+/*Cuando el cursor este en el Menú horizontal se va a desplegar el menú vertical*/
+.MenuHorizontal li:hover .MenuVertical{
+    color: white;
+    /*El menú va a tener un display block*/
+    display: block;
+    list-style: none;
+    /*Se le da colores de fondo de degradado*/
+    background-image: linear-gradient(-150grad, rgb(0, 255, 200), rgb(38, 15, 124));
+    /*Se le asigna un tipo de letra*/
+    font-family:'Times New Roman', Times, serif;
+}
+
+/*Cuando el cursor este en el menú vertical el color de fondo va a cambiar*/
+.MenuVertical li:hover{
+    background-color: rgb(15, 42, 117);
+}
+
+/*Cuando el cursor en el apartado de festividades el menú*/
+.MenuBot:hover{
+    /*Va a tener un espacio en la derecha e izquierda del borde*/
+    padding: 10px;
+    /*Se le cambia el color de fondo*/
+    background-color: rgb(15, 42, 117);
+    /*Y al borde se le da un radio al borde*/
+    border-radius: 6%;
+}
+
+/*Se le da al menú un tipo de letra*/
+.MenuR{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Al apartado de mapa se le da un espacio del borde*/
+.Mapa{
+    padding:  10px;
+}
+
+/*Cuando el cursor este en el apartado de mapa su fondo de color va a cambiar*/
+.Mapa:hover{
+    background-color: rgb(15, 42, 117);
+}
+
+/*Al apartado del menú se le quita la decoración del link y se le coloca un display para que pueda ser ajustable*/
+.Ayuda a {
+    list-style: none;
+    display: flex;
+}
+
+/*Se le da un espacio entre el contenido y el margen */
+.Contacto{
+    padding: 10px;
+}
+
+/*Cuendo el cursor este en el apartado de contacto su fondo de color va a cambiar*/
+.Contacto:hover{
+    background-color: rgb(15, 42, 117);
+}
+
+
+/*Apartado uno de tradiciones*/
+/*Todo el contenido que tenga este div va a estar en el centro y va a ser ajustable en cuestión de espacio*/
+/*Cambio de letra*/
+div.Tradiciones{
+    justify-content: center;
+    display: flex;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Todos los divs que tengan el nombre de Tradition:*/
+/*Van a tener un margen de 20px*/
+/*Su texto va a estar centrado*/
+/*Y si hay una transición va a durar 1.5s*/
+/*La transición solo puede ocurrir cuando el cursor esta en este div*/ 
+div.Tradition{
+    margin:20px;
+   text-align: center;
+   transition: 1.5s;
+}
+/*Cuando el cursor este en este div sus dimensiones van a cambiar o van a incrementar en este caso todo el contenido que
+este en el div.
+Se la agrega una sombra*/
+div.Tradition:hover{
+    transform: scale(1.1,1.1);
+    box-shadow: 1px 2px 2px grey ;
+}
+
+/*A la imagen principal se le da un un top en la parte de arriba de 0,
+la imagen va a ocupar todo el ancho,
+el margen de la izquierda va a estar en 0 
+y su contenido va a estar en el centro*/
+img.TlaxcalaImg{
+    margin-top: 0px;
+    width: 100%;
+    margin-left: 0px;
+    justify-content: center;
+}
+
+/*A la imagen del Carnaval se le da un ancho y un largo*/
+.Carnaval{
+    width: 300px;
+    height: 200px;
+}
+
+/*Se le da un color al título del Carnaval*/
+.TituloCarnaval{
+    color: rgb(0, 89, 255);
+}
+
+
+/*A la imagen de Semana Santa se le asigna un ancho y un largo.*/
+.SemanaSanta{
+    width: 300px;
+    height: 200px;
+}
+
+/*Al letra del título de Semana Santa se le asigna un color color*/
+#TituloSemana{
+    color: rgb(0, 89, 255);
+}
+
+
+/*A la imagen de la Feria de Tlaxcala se le asigna un ancho y un largo*/
+.FeTlaxcala{
+    width: 300px;
+    height: 200px;
+}
+
+/*Al letra del título de la feria de Tlaxcala se le asigna un color*/
+#TituloFeriaTlaxcala{
+    color: rgb(0, 89, 255);
+}
+
+/*Al segundo apartado del div:
+Su contenido va a estar en el centro, 
+su display va a ser ajustable,
+se le da un tipo de letra de todo el texto*/
+div.Tradiciones2Parte{
+    justify-content: center;
+    display: flex;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Todos los divs que tengan este nombre de clase van a tener, 
+un ancho, 
+un margen, 
+su contenido va a estar en el centro,
+y va a tener tiempo para que ocurra la transición*/
+div.Traditions2Parte{
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    transition: 1.5s;
+}
+
+/*Cuando el cursor este en el div, 
+su ancho y su largo van a cambiar junto con su contenido, 
+se le asigna una sombra*/
+div.Traditions2Parte:hover{
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 0.6rem 0.6rem rgb(73, 73, 73);
+}
+
+/*A la imagen de la Huamantlada se le asigna un ancho y un alto*/
+.Huamantlada{
+    width: 300px;
+    height: 200px;
+}
+
+/*Al título de la Huamantlada se le coloca un color al tipo de letra*/
+#TituloHuamantlada{
+    color: rgb(0, 89, 255);
+}
+
+/*A la imagen se le da un ancho y un alto*/
+.DiaDeMuertos{
+    width: 300px;
+    height: 200px;
+}
+
+/*Al título del día de muertos se le da un color a la letra o al texto*/
+#TituloMuertos{
+    color: rgb(0, 89, 255);
+}
+
+/*A la imagen de los Mueganos de Huamantla se le asigna un ancho y un largo*/
+.MueganosHuamantla{
+    width: 300px;
+    height: 200px;
+}
+
+/*Al título de los Mueganos se le da un color al texto*/
+#TituloMueganos{
+    color: rgb(0, 89, 255);
+}
+
+/*Al pie de la página se le asigna un */
+.Final{
+    /*Manejamos el comportamiento del fondo con el scrooll*/
+    background-attachment: scroll;
+    /*Especifí hasta donde se va a estender el color de fondo */
+    background-clip: border-box;
+    /*Se le asigna un origen de coordenadas para la posición del fondo*/
+    background-origin: padding-box;
+    /*Un color de fondo*/
+    background-color: rgb(21, 118, 209);
+    /*Al fondo se le da un ancho y un alto*/
+    background-size: auto;
+    /*A la caja se le da un borde o al div*/
+    box-sizing: border-box;
+    /*Su contenido va a estar bloqueado*/
+    display: block;
+    /*Sele da un alto*/
+    height: 1200px;
+}
+
+/*Cuando la pantalla sea menor o igual a 952px de ancho va a cambiar a un menú y contenido responsivo*/
+@media (max-width: 952px){
+
+
+    .Tradiciones4Parte{
+        display: none;
+    }
+
+    .Tradiciones5Parte{
+        display: none;
+    }
+
+    .MenuBot{
+        display: none;
+    }
+
+    .Ayuda{
+        display: none;
+    }
+
+    .fa-solid.fa-bars.Inicio{
+        font-size: 40px;
+        position: fixed;
+        width: 100%;
+        justify-content: right;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        cursor: pointer;
+    }
+
+    header{
+        font-size: 20px;
+        background-color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        position: fixed;
+        display: none;
+    }
+
+    .fa-solid.fa-bars.Inicio:hover header{
+        display: block;
+    }
+
+    .TlaxcalaImg{
+        width: 100%;
+    }
+
+    div.Tradiciones{
+        margin: 20px 20px;
+        display: block;
+        font-size: 20px;
+    }
+
+    div.Tradition{
+        margin: 100px 0px;
+        width: 100%;
+        display: block;
+    }
+
+    .Carnaval{
+        display: block;
+        width: 100%;
+        height: 50%;
+    }
+
+    .SemanaSanta{
+        display: block;
+        height: 50%;
+        width: 100%;
+    }
+
+    .FeTlaxcala{
+        display: block;
+        height: 50%;
+        width: 100%;
+    }
+
+    div.Tradiciones2Parte{
+        margin: 20px 20px;
+        display: block;
+        font-size: 20px;
+    }
+
+    div.Traditions2Parte{
+        margin: 100px 0px;
+        width: 100%;
+        display: block;
+    }
+
+    .Huamantlada{
+        width: 100%;
+        height: 50%;
+        display: block;
+    }
+
+    .DiaDeMuertos{
+        width: 100%;
+        height: 50%;
+        display: block;
+    }
+
+    .MueganosHuamantla{
+        width: 100%;
+        height: 50%;
+        display: block;
+    }
+
+    .Tradiciones3Parte{
+        display: block;
+        margin: 20px 20px;
+        font-size: 20px;
+    }
+
+    .Traditions3Parte{
+        margin: 100px 0px;
+        width: 100%;
+        display: block;
+    }
+
+    #Pulque{
+        margin: 0;
+        width: 100%;
+        height: 50%;
+        display: block;
+    }
+
+    #Virgen{
+        margin: 0;
+        width: 100%;
+        height: 50%;
+        display: block;
+    }
+
+    #Corpus{
+        margin: 0;
+        width: 100%;
+        height: 50%;
+        display: block;
+    }
+
+    .Tradiciones4Parte{
+        display: block;
+        margin: 20px 20px;
+        font-size: 20px;
+    }
+
+    .Traditions4Parte{
+        margin: 100px 0px;
+        width: 100%;
+        display: block;
+    }
+    
+    #T400Familias{
+        width: 100%;
+        height: 50%;
+        display: block;
+        margin: 0;
+    }
+
+    #Luciernagas{
+        width: 100%;
+        height: 50%;
+        display: block;
+        margin: 0;
+    }
+
+    #Sarape{
+        width: 100%;
+        height: 50%;
+        display: block;
+        margin: 0;
+    }
+
+    .Tradiciones5Parte{
+        display: block;
+        margin: 20px 20px;
+        font-size: 20px;
+    }
+
+    .Traditions5Parte{
+        margin: 100px 0px;
+        display: block;
+        width: 100%;
+    }
+
+    #Titeres{
+        width: 100%;
+        height: 50%;
+        display: block;
+        margin: 0;
+    }
+
+    #Noche{
+        width: 100%;
+        height: 50%;
+        display: block;
+        margin: 0;
+    }
+
+    #Toros{
+        width: 100%;
+        height: 50%;
+        display: block;
+        margin: 0;
+    }
+
+}
+
+
+
+
+
